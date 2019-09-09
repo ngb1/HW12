@@ -57,7 +57,7 @@ mars_weather = 'Sol 1801 (Aug 30, 2017), Sunny, high -21C/-5F, low -80C/-112F, p
 
 * Visited the USGS Astrogeology site [here](https://astrogeology.usgs.gov/search/results?q=hemisphere+enhanced&k1=target&v1=Mars) to obtain high resolution images for each of Mar's hemispheres.
 
-* You needed to click each of the links to the hemispheres in order to find the image url to the full resolution image.
+* I needed to click each of the links to the hemispheres in order to find the image url to the full resolution image.
 
 * Saved both the image url string for the full resolution hemisphere image, and the Hemisphere title containing the hemisphere name. Used a Python dictionary to store the data using the keys `img_url` and `title`.
 
@@ -77,7 +77,7 @@ hemisphere_image_urls = [
 
 ## Step 2 - MongoDB and Flask Application
 
-Use MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
+Used MongoDB with Flask templating to create a new HTML page that displays all of the information that was scraped from the URLs above.
 
 * Started by converting your Jupyter notebook into a Python script called `scrape_mars.py` with a function called `scrape` that will execute all of your scraping code from above and return one Python dictionary containing all of the scraped data.
 
